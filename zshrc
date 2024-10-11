@@ -78,22 +78,10 @@ alias c='clear'
 alias ll='ls --color'
 alias ll='ls -lah --color'
 alias python='python3'
-alias dev='cd ~/Development'
-alias thesis='cd ~/Development/thesis/simulator'
-alias trash='/Users/lucas/Development/installs/tools-osx/src/trash'
-alias rm='trash'
-alias bcat='bat --paging never'
-alias clip='pbcopy'
-alias exp='gh copilot explain'
-alias sug='gh copilot suggest'
 alias penv='source .venv/bin/activate; which python3'
 alias venv='virtualenv .venv; penv'
 
-export NOTES_DIR='/Users/lucas/Documents/Personal/notes'
-alias note='vim $NOTES_DIR/general.md'
-alias notes='vim $NOTES_DIR'
 alias zshrc='vim ~/.zshrc; source ~/.zshrc'
-alias dotfiles='vim ~/Development/personal/dotfiles'
 
 # TODO refactor this...
 function ff() {

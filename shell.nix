@@ -6,7 +6,8 @@ pkgs.mkShell {
     fzf
     fd
     zsh
-		autojump
+    autojump
+    ripgrep
   ];
 
   shellHook = ''
