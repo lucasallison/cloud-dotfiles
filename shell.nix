@@ -8,6 +8,7 @@ pkgs.mkShell {
     zsh
     autojump
     ripgrep
+    tmux
   ];
 
   shellHook = ''
