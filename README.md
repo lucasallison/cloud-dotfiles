@@ -1,2 +1,3 @@
-# cloud_dotfiles
-Basic dotfiles for cloud environments
+# Cloud dotfiles
+
+Simple dotfiles for cloud environments
