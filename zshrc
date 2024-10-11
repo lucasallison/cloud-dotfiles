@@ -11,10 +11,8 @@ precmd() { vcs_info }
 
 # Check if we are in a Nix shell
 if [[ -n "$IN_NIX_SHELL" ]]; then
-	echo "a"
     NIX_SHELL_INDICATOR="%F{33}(nix)%f "  # Yellow text to indicate Nix shell
 else
-	echo "b"
     NIX_SHELL_INDICATOR=""
 fi
 
@@ -77,7 +75,8 @@ bindkey "^[[B" history-search-forward
 
 # Aliases
 alias c='clear'
-alias ll='ls -lah'
+alias ll='ls --color'
+alias ll='ls -lah --color'
 alias python='python3'
 alias dev='cd ~/Development'
 alias thesis='cd ~/Development/thesis/simulator'
