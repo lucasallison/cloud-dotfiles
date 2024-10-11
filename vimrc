@@ -1,13 +1,12 @@
 " Custom settings for vim
 
 " Formatting
+set expandtab
 set tabstop=2
 set sw=2
 set autoindent
 syntax on
-set rtp+=~/.vim/colors/
 au VimResized * exe 
-colorscheme ron
 set number relativenumber 
 set splitbelow splitright
 set scrolloff=15
