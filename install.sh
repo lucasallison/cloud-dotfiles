@@ -11,6 +11,8 @@ cp zshrc ~/.zshrc
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git 
 mkdir ~/.installs
 mv zsh-syntax-highlighting ~/.installs
-echo "# Syntax highlighting\nsource ~/.installs/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
+echo "# Syntax highlighting" >> ~/.zshrc
+echo "source ~/.installs/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
 
-echo "Start nix-shell:\nnix-shell $PWD/shell.nix"
+echo "Start nix-shell:"
+echo "nix-shell $PWD/shell.nix"
