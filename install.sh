@@ -15,4 +15,4 @@ echo "# Syntax highlighting" >> ~/.zshrc
 echo "source ~/.installs/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
 
 echo "Start nix-shell:"
-echo "nix-shell $PWD/shell.nix"
+echo nix-shell $PWD/shell.nix"

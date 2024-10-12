@@ -12,7 +12,7 @@ pkgs.mkShell {
   ];
 
   shellHook = ''
-    echo "source ${pkgs.autojump}/etc/profile.d/autojump.sh" > ~/.source_autojump.zshrc
+    echo "source ${pkgs.autojump}/etc/profile.d/autojump.sh" > ~/.source_autojump.sh
     export SHELL=${pkgs.zsh}/bin/zsh
     exec ${pkgs.zsh}/bin/zsh
   '';
