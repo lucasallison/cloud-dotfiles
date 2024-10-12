@@ -75,7 +75,7 @@ bindkey "^[[B" history-search-forward
 
 # Aliases
 alias c='clear'
-alias ll='ls --color'
+alias ls='ls --color'
 alias ll='ls -lah --color'
 alias python='python3'
 alias penv='source .venv/bin/activate; which python3'
