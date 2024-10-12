@@ -156,5 +156,5 @@ autoload edit-command-line; zle -N edit-command-line
 bindkey '^e' edit-command-line
 
 # Autojump
-[[ -s /Users/lucas/.autojump/etc/profile.d/autojump.sh ]] && source /Users/lucas/.autojump/etc/profile.d/autojump.sh
+. ~/.source_autojump.zshrc
 autoload -U compinit && compinit -u
