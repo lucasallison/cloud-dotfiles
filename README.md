@@ -1,3 +1,3 @@
-# Cloud dotfiles
+# Simple Shell
 
-Simple dotfiles for cloud environments
+Directory containing nix-shell configurations to easily install and use over ssh.
