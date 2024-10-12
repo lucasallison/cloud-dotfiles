@@ -1,5 +1,12 @@
 # ZSHRC
 
+# Open default nix-shell 
+if [[ ! -n "$IN_NIX_SHELL" ]]; then
+	echo "Opening default Nix shell..."
+	. ~/.config/.open_default_nix_shell.sh
+fi
+
+# Default editor 
 VISUAL=vim; export VISUAL EDITOR=vim; export EDITOR
 
 # Git info
@@ -133,8 +140,7 @@ function ff() {
 	eval ${cmd}
 }
 
-LS_COLORS='no=00;37:fi=00:di=00;33:ln=04;36:pi=40;33:so=01;35:bd=40;33;01:'
-export LS_COLORS
+export LS_COLORS='di=36:ln=1;31:so=37:pi=1;33:ex=35:bd=37:cd=37:su=37:sg=37:tw=32:ow=32'
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 
 # Basic auto/tab complete:
@@ -156,8 +162,8 @@ autoload edit-command-line; zle -N edit-command-line
 bindkey '^e' edit-command-line
 
 # Autojump
-. ~/.source_autojump.sh
+. ~/.config/.source_autojump.sh
 autoload -U compinit && compinit -u
 
 # Syntax highlighting
-. ~/.source_zsh_syntax_highlighting.sh
+. ~/.config/.source_zsh_syntax_highlighting.sh
