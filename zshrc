@@ -158,3 +158,6 @@ bindkey '^e' edit-command-line
 # Autojump
 . ~/.source_autojump.sh
 autoload -U compinit && compinit -u
+
+# Syntax highlighting
+. ~/.source_zsh_syntax_highlighting.sh
