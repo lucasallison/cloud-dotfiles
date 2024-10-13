@@ -3,7 +3,7 @@
 # Open default nix-shell 
 if [[ ! -n "$IN_NIX_SHELL" ]]; then
 	echo "Opening default Nix shell..."
-	. ~/.config/.open_default_nix_shell.sh
+	. ~/.config/nix_shell/.open_default_nix_shell.sh
 fi
 
 # Default editor 
@@ -148,7 +148,7 @@ autoload -U compinit
 zstyle ':completion:*' menu select
 zmodload zsh/complist
 compinit
-_comp_options+=(globdots)		# Include hidden files.
+_comp_options+=(globdots) # Include hidden files.
 
 # Use vim keys in tab complete menu
 bindkey -M menuselect 'h' vi-backward-char
@@ -162,8 +162,8 @@ autoload edit-command-line; zle -N edit-command-line
 bindkey '^e' edit-command-line
 
 # Autojump
-. ~/.config/.source_autojump.sh
+. ~/.config/nix_shell/.source_autojump.sh
 autoload -U compinit && compinit -u
 
 # Syntax highlighting
-. ~/.config/.source_zsh_syntax_highlighting.sh
+. ~/.config/nix_shell/.source_zsh_syntax_highlighting.sh
