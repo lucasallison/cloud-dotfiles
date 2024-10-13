@@ -9,6 +9,9 @@ fi
 # Default editor 
 VISUAL=vim; export VISUAL EDITOR=vim; export EDITOR
 
+# Autocompletion
+autoload -U compinit && compinit -u
+
 # Git info
 autoload -Uz vcs_info
 zstyle ':vcs_info:*' enable git
@@ -162,8 +165,4 @@ autoload edit-command-line; zle -N edit-command-line
 bindkey '^e' edit-command-line
 
 # Autojump
-. ~/.config/nix_shell/.source_autojump.sh
-autoload -U compinit && compinit -u
-
-# Syntax highlighting
-. ~/.config/nix_shell/.source_zsh_syntax_highlighting.sh
+. ~/.source_nix_autojump.sh
