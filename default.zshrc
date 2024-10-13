@@ -3,7 +3,7 @@
 # Open default nix-shell 
 if [[ ! -n "$IN_NIX_SHELL" ]]; then
 	echo "Opening default Nix shell..."
-	. ~/.config/nix_shell/.open_default_nix_shell.sh
+	. ~/.open_default_nix_shell.sh
 fi
 
 # Default editor 

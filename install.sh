@@ -34,5 +34,8 @@ if [ ! -f ~/.zshrc ] || ! grep -Fxq ". ~/.zshrc.default" ~/.zshrc; then
     echo ". ~/.zshrc.default" >> ~/.zshrc
 fi
 
+# Add script to open nix-shell
+echo "nix-shell $PWD/shell.nix" > ~/.open_default_nix_shell.sh
+
 echo "* Everything is configured!"
 nix-shell $PWD/shell.nix
