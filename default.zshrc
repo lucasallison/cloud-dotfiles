@@ -34,7 +34,7 @@ RPROMPT="%B${BRANCH} [%F{111}${PATH_TO_SHOW}%f]%b"
 
 function zle-line-init zle-keymap-select {
     VIMODE="${${KEYMAP/vicmd/!}/(main|viins)/ }"
-    PROMPT="%B${NIX_SHELL_INDICATOR}[%F{76}%n%f]%F{196}${VIMODE}%f$%b "
+    PROMPT="%B${NIX_SHELL_INDICATOR}[%F{76}%n@%m%f]%F{196}${VIMODE}%f$%b "
     zle reset-prompt
 }
 zle -N zle-line-init
@@ -42,7 +42,7 @@ zle -N zle-keymap-select
 
 function prompt-after-exe {
     OLD_PROMPT="@PROMPT"
-    PROMPT="%B${NIX_SHELL_INDICATOR}[%F{76}%n%f] $%b "
+    PROMPT="%B${NIX_SHELL_INDICATOR}[%F{76}%n@%m%f] $%b "
     zle reset-prompt
     PROMPT="@OLD_PROMPT"
     zle accept-line
